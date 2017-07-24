@@ -1,0 +1,29 @@
+language: node_js
+
+node_js:
+  - '8.1.0'
+
+env:
+  - CXX=g++-4.8
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+
+script: "npm run validate"
+
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - master
+
+after_script:
+  - codecov --token=ae42724b-e9e1-4fa7-b604-08bd85af37a1

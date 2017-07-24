@@ -1,0 +1,44 @@
+{
+  "name": "bridge-metrics",
+  "version": "1.0.0",
+  "description": "Bridge metrics for prometheus",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "NODE_ENV=test JASMINE_CONFIG_PATH=jasmine.json istanbul cover --config .istanbul.yml jasmine",
+    "cover": "open coverage/lcov-report/index.html",
+    "lint": "eslint src test",
+    "validate": "npm run lint && npm test"
+  },
+  "keywords": [
+    "common",
+    "metrics",
+    "prometheus"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leadformance/bridge-metrics.git"
+  },
+  "author": "Jimmy Grand (jgrand@leadformance.com)",
+  "authors": [
+    {
+      "name": "Leadformance development team",
+      "email": "devs@leadformance.com"
+    }
+  ],
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/Leadformance/bridge-metrics/issues"
+  },
+  "homepage": "https://github.com/Leadformance/bridge-metrics#README.md",
+  "devDependencies": {
+    "codecov": "^2.1.0",
+    "eslint": "^4.0.0",
+    "istanbul": "0.4.5",
+    "jasmine": "2.6.0",
+    "lodash": "^4.6.1",
+    "proxyquire": "^1.7.4"
+  },
+  "dependencies": {
+    "prom-client": "^9.1.1"
+  }
+}

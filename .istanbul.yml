@@ -1,0 +1,9 @@
+instrumentation:
+    root: lib
+    include-all-sources: true
+    excludes: ['database/definitions/*.js']
+reporting:
+    dir: coverage
+    reports:
+        - lcov
+        - cobertura
