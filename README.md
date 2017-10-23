@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/Leadformance/bridge-metrics/branch/master/graph/badge.svg)](https://codecov.io/gh/Leadformance/bridge-metrics)
+[![Build Status](https://travis-ci.org/Leadformance/bridge-metrics.svg?branch=master)](https://travis-ci.org/Leadformance/bridge-metrics) [![codecov](https://codecov.io/gh/Leadformance/bridge-metrics/branch/master/graph/badge.svg)](https://codecov.io/gh/Leadformance/bridge-metrics)
 
 # bridge-metrics
 
